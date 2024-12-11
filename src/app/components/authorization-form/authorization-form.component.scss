@@ -1,0 +1,41 @@
+.auth-form-block {
+  border-radius: 10px;
+  padding: 2vh 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(#fff, #3bbff8 100%);
+
+  .auth-form-header {
+    margin: 2vh auto;
+    font-size: 2rem;
+  }
+
+  .inpt {
+    width: 80%;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 2vh;
+  }
+
+  .auth-form-checkbox {
+    .auth-form-checkbox-message {
+      color: gray;
+      font-size: 17px;
+    }
+  }
+
+  .auth-form-button {
+    margin: 2vh;
+    font-size: 1.3rem;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #3bbff8;
+    cursor: pointer;
+    background-color: #fff;
+  }
+}

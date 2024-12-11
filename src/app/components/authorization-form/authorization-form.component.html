@@ -1,0 +1,31 @@
+<form [formGroup]="authorizationForm" novalidate (ngSubmit)="submit()">
+  <div class="auth-form-block">
+    <h3 class="auth-form-header">АВТОРИЗАЦИЯ</h3>
+
+      <input
+        type="text"
+        name="userName"
+        formControlName="name"
+        placeholder="user name"
+        class="inpt"
+      />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="password"
+        class="inpt"
+      />
+
+    <div class="auth-form-checkbox">
+      <input type="checkbox" formControlName="checkbox" />
+      <span class="auth-form-checkbox-message">
+        Eсли вы еще не зарегестрированны - мы автоматически <br />
+        создадим нового пользователя
+      </span>
+    </div>
+
+    <button class="auth-form-button" type="submit" [disabled]="authorizationForm.invalid">
+      войти
+    </button>
+  </div>
+</form>

@@ -1,0 +1,12 @@
+<form [formGroup]="addNotesForm" (submit)="addNote()">
+  <div class="add-task-window hide">
+    <input type="text" formControlName="name" placeholder="name notes">
+    <input type="text" formControlName="description" placeholder="description">
+    <input type="checkbox" formControlName="isPriority">
+    <input type="datetime-local" formControlName="executionDate">
+
+    <button type="submit"> add </button>
+    <button (click)="hide()">close</button>
+  </div>
+
+</form>

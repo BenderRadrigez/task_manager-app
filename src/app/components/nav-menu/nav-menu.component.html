@@ -1,0 +1,8 @@
+<ul>
+  @for (item of notes; track $index) {
+    <li><app-note [item]='item'></app-note></li>
+  }
+</ul>
+
+<button (click)="addNotes()">add notes</button>
+
